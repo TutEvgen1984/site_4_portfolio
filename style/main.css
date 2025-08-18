@@ -24,7 +24,10 @@ body {
 .container--common {
   max-width: 1600px;
   width: 100%;
+
+  /* отступы слева и справа: */
   padding: 0 30px;
+
   margin: 0 auto;
 }
 
@@ -40,9 +43,42 @@ body {
 /* #region Section Skills */
 
 .section--skills {
+  /* отступы сверху и снизу: */
   padding: 50px 0;
 }
 
+/* #region Grid */
+
+.skills__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "one two three"
+    "one four four";
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.speaking {
+  grid-area: one;
+}
+
+.writing {
+  grid-area: two;
+}
+
+.reading {
+  grid-area: three;
+}
+
+.listening {
+  grid-area: four;
+  flex-direction: row;
+}
+
+/* #endregion Grid */
+
+/* Общее оформление карточек */
 .skills__grid-item {
   background-color: #F5F5F5;
   padding: 15px;
@@ -55,6 +91,8 @@ body {
 .skills__grid-image img {
   max-width: 100%;
 }
+
+.skills__grid-image {}
 
 .skills__grid-content {}
 
@@ -92,35 +130,7 @@ body {
   opacity: 0.8;
 }
 
-/* Grid */
-.skills__grid {
-  display: grid;
-  gap: 30px;
-  grid-template-areas:
-    "one two three"
-    "one four four";
-  justify-content: space-evenly;
-  align-items: stretch;
-}
-
-.speaking {
-  grid-area: one;
-}
-
-.writing {
-  grid-area: two;
-}
-
-.reading {
-  grid-area: three;
-}
-
-.listening {
-  grid-area: four;
-  flex-direction: row;
-}
-
-/* Зададим диву с изображением, который находится внутри .listening, порядок 1.*/
+/* Зададим диву с изображением, который находится внутри .listening, порядок 1 */
 .listening .skills__grid-image {
   order: 1;
   /* По умолчанию элементы отображаются в том порядке, в котором они расположены в разметке, а значение свойства order равно 0. Но это свойство позволяет переставлять их местами. */
