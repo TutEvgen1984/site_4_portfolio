@@ -16,9 +16,13 @@ body {
 /* #endregion Сброс */
 
 /* #region Общее */
+:root {
+  --font-family: 'Poppins', sans-serif;
+}
+
 
 body {
-  font-family: 'Calibri', sans-serif;
+  font-family: var(--font-family);
 }
 
 .container--common {
@@ -73,7 +77,6 @@ body {
 
 .listening {
   grid-area: four;
-  flex-direction: row;
 }
 
 /* #endregion Grid */
@@ -83,9 +86,18 @@ body {
   background-color: #F5F5F5;
   padding: 15px;
   border-radius: 15px;
+
   display: flex;
+
+  /* сначала всем карточкам присваиваем  flex-direction: column; */
   flex-direction: column;
+
   justify-content: space-between;
+}
+
+.listening {
+  /* затем у одной последней карточки переопределяем расположение с колонки на ряд */
+  flex-direction: row;
 }
 
 .skills__grid-image img {
@@ -113,6 +125,7 @@ body {
 }
 
 .skills__grid-content button {
+  font-family: var(--font-family);
   width: 218px;
   height: 60px;
   background: #263238;
@@ -144,8 +157,11 @@ body {
       "three four";
   }
 
+  /* у карточек есть общий класс .skills__grid-item, затем к этой же карточке добавляется класс .listening */
   .listening {
     display: block;
+    /* у .skills__grid-item было display: flex которое изменили на block вторым накладывающимся классом .listening */
+    /* так как карточка теперь имеет display: block, то расположение элементов теперь как в чистом HTML - для изображения перестает работать order: 1 так как он работает только у флексов, и порядок расположения картинки и затем ниже блок текста идет как для блочных элементов */
   }
 }
 
