@@ -13,6 +13,17 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* #endregion Сброс */
 
 /* #region Общее */
@@ -43,6 +54,19 @@ body {
 }
 
 /* #endregion Общее */
+
+/* #region Header */
+.header--container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1148px;
+  width: 100%;
+  padding: 48px 20px;
+  margin: 0 auto;
+  min-height: 165px;
+}
+
+/* #endregion Header */
 
 /* #region Section Skills */
 
@@ -160,8 +184,8 @@ body {
   /* у карточек есть общий класс .skills__grid-item, затем к этой же карточке добавляется класс .listening */
   .listening {
     display: block;
-    /* у .skills__grid-item было display: flex которое изменили на block вторым накладывающимся классом .listening */
-    /* так как карточка теперь имеет display: block, то расположение элементов теперь как в чистом HTML - для изображения перестает работать order: 1 так как он работает только у флексов, и порядок расположения картинки и затем ниже блок текста идет как для блочных элементов */
+    /* у 4-й карточки есть класс .skills__grid-item, у которого было display: flex, добавив класс .listening мы перезаписали его с flex на block */
+    /* так как 4-я карточка теперь имеет display: block, то расположение элементов теперь как в чистом HTML - для изображения перестает работать order: 1 так как он работает только у флексов, и порядок расположения картинки и затем ниже блок текста идет как для блочных элементов */
   }
 }
 
