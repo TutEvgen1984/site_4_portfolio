@@ -34,6 +34,7 @@ p {
 
 body {
   font-family: var(--font-family);
+  --color-grey: #939393;
 }
 
 .container--common {
@@ -41,7 +42,7 @@ body {
   width: 100%;
 
   /* отступы слева и справа: */
-  padding: 0 30px;
+  padding: 0 130px;
 
   margin: 0 auto;
 }
@@ -56,14 +57,117 @@ body {
 /* #endregion Общее */
 
 /* #region Header */
+.header {}
+
 .header--container {
   display: flex;
   justify-content: space-between;
-  max-width: 1148px;
+  padding: 55px 0;
+}
+
+.header__logo {}
+
+/* всё слово "Britlex" */
+.header__logo--a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+
+  display: block;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: transparent;
+}
+
+/* всё слово "Britlex" при наведении */
+.header__logo--a:hover,
+.header__logo--a:focus {
+  background-color: khaki;
+}
+
+/* вторая часть слова "lex" */
+.header__logo--right-text {
+  color: #939393;
+}
+
+/*/~ линия подчёркивания, без наведения невидимая ~/
+.header__logo::after {
+  content: "";
+  display: grid;
+  place-self: center;
+  width: 0px;
+  height: 3px;
+
+  /~ без наведения делаем невидимой: ~/
+  background-color: transparent;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+/~ линия подчёркивания, при наведении делаем видимой ~/
+.header__logo:hover::after {
+  background-color: var(--color-grey);
   width: 100%;
-  padding: 48px 20px;
-  margin: 0 auto;
-  min-height: 165px;
+}*/
+
+.header__nav {}
+
+.header__nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__nav-a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #263238;
+
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.header__nav-a:hover,
+.header__nav-a:focus {
+  background-color: khaki;
+}
+
+.header__nav--li-01 {}
+
+.header__nav--li-02 {}
+
+.header__nav--li-03 {}
+
+.header__nav--li-04 {}
+
+.header__nav--li-05 {}
+
+.header__btn {
+  display: grid;
+  place-items: center;
+  width: 220px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #263238;
+  cursor: pointer;
+
+  color: #000;
+  font-weight: 400;
+  font-size: 24px;
+
+  transition: 0.3s;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+  background-color: khaki;
 }
 
 /* #endregion Header */
