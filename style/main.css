@@ -62,7 +62,8 @@ body {
 .header--container {
   display: flex;
   justify-content: space-between;
-  padding: 55px 0;
+  padding-top: 55px;
+  padding-bottom: 48px;
 }
 
 .header__logo {}
@@ -172,11 +173,75 @@ body {
 
 /* #endregion Header */
 
+/* #region Section Home */
+
+.section--home {}
+
+.container--home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home--left-side {}
+
+.home--left-side__title-plus-img {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+
+.home--left-side__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 125%;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.home--left-side__div-img {}
+
+.home--left-side__img {}
+
+.home--left-side__p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #8f95a5;
+
+  max-width: 545px;
+
+  margin-bottom: 60px;
+}
+
+.home--left-side__button {
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+
+  border-radius: 15px;
+  width: 438px;
+  height: 118px;
+  background: #263238;
+
+  font-family: inherit;
+}
+
+.home--right-side {}
+
+.home--left-side__img {
+  /* адаптивное изображение */
+  max-width: 100%;
+  height: auto;
+}
+
+/* #endregion Section Home */
+
 /* #region Section Skills */
 
 .section--skills {
   /* отступы сверху и снизу: */
-  padding: 50px 0;
+  padding: 98px 0;
 }
 
 /* #region Grid */
@@ -185,8 +250,8 @@ body {
   display: grid;
   gap: 30px;
   grid-template-areas:
-    "one two three"
-    "one four four";
+    "one two  three"
+    "one four four ";
   justify-content: space-evenly;
   align-items: stretch;
 }
