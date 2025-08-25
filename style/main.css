@@ -51,6 +51,9 @@ body {
   font-weight: 600;
   font-size: 48px;
   line-height: 80px;
+}
+
+.text-center--common {
   text-align: center;
 }
 
@@ -177,7 +180,7 @@ body {
 
 .section--home {}
 
-.container--home {
+.home____flex-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -229,7 +232,7 @@ body {
 
 .home--right-side {}
 
-.home--left-side__img {
+.home--right-side--img {
   /* адаптивное изображение */
   max-width: 100%;
   height: auto;
@@ -254,6 +257,8 @@ body {
     "one four four ";
   justify-content: space-evenly;
   align-items: stretch;
+
+  padding-top: 96px;
 }
 
 .speaking {
@@ -297,7 +302,9 @@ body {
   max-width: 100%;
 }
 
-.skills__grid-image {}
+.skills__grid-image {
+  text-align: center;
+}
 
 .skills__grid-content {}
 
@@ -369,3 +376,58 @@ body {
 }
 
 /* #endregion section--skills */
+
+/* #region Section About us */
+.section--about-us {}
+
+.about-us__flex-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 185px 0;
+}
+
+.about-us__left-side {
+  max-width: 640px;
+}
+
+.about-us__left-side h2 {
+  padding-top: 30px;
+}
+
+.about-us__p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+
+  padding-top: 23px;
+}
+
+.about-us__left-side--quantity-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 6px;
+}
+
+.quantity-group__item {
+  text-align: center;
+}
+
+.quantity-group__p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+
+.about-us__right-side {}
+
+/* адаптивное изображение */
+.about-us__right-side img {
+  max-width: 100%;
+  height: auto;
+
+  margin-right: 10px;
+}
+
+/* #endregion Section About us */
