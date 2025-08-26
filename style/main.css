@@ -53,8 +53,27 @@ body {
   line-height: 80px;
 }
 
+.h3--common {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+}
+
 .text-center--common {
   text-align: center;
+}
+
+.p--common {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+
+.img--common {
+  /* адаптивное изображение */
+  max-width: 100%;
+  height: auto;
 }
 
 /* #endregion Общее */
@@ -205,7 +224,6 @@ body {
 
 .home--left-side__div-img {}
 
-.home--left-side__img {}
 
 .home--left-side__p {
   font-weight: 400;
@@ -231,12 +249,6 @@ body {
 }
 
 .home--right-side {}
-
-.home--right-side--img {
-  /* адаптивное изображение */
-  max-width: 100%;
-  height: auto;
-}
 
 /* #endregion Section Home */
 
@@ -308,12 +320,7 @@ body {
 
 .skills__grid-content {}
 
-.skills__grid-content h3 {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 80px;
-  color: #263238;
-}
+.skills__grid-content h3 {}
 
 .skills__grid-content p {
   font-weight: 400;
@@ -396,10 +403,6 @@ body {
 }
 
 .about-us__p {
-  font-weight: 400;
-  font-size: 20px;
-  color: #8f95a5;
-
   padding-top: 23px;
 }
 
@@ -431,3 +434,33 @@ body {
 }
 
 /* #endregion Section About us */
+
+/* #region Pricing */
+
+.section--pricing {}
+
+.pricing__flex-group {
+  display: flex;
+}
+
+.pricing__card {
+  max-width: 500px;
+}
+
+/* изображения заключили в div для выравнивания высоты высотой div'а */
+.pricing__div--img {
+  max-height: 340px;
+  height: 100%;
+}
+
+.pricing__h3 {}
+
+.pricing__p {}
+
+.pricing__cost-btn {}
+
+.pricing__price {}
+
+.pricing__period {}
+
+/* #endregion Pricing */
