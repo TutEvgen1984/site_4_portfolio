@@ -439,12 +439,21 @@ body {
 
 .section--pricing {}
 
+.pricing__h2 {
+  margin-bottom: 45px;
+}
+
 .pricing__flex-group {
   display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pricing__card {
-  max-width: 500px;
+  max-width: 435px;
+  width: 100%;
+  padding: 9px;
 }
 
 /* изображения заключили в div для выравнивания высоты высотой div'а */
@@ -455,11 +464,31 @@ body {
 
 .pricing__h3 {}
 
-.pricing__p {}
+.pricing__p {
+  min-height: 92px;
+  margin-bottom: 30px;
+}
 
-.pricing__cost-btn {}
+.pricing__cost-btn {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-.pricing__price {}
+  max-width: 240px;
+  width: 100%;
+  padding: 10px;
+
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.pricing__price {
+  font-weight: 400;
+  font-size: 30px;
+  color: #263238;
+}
 
 .pricing__period {}
 
