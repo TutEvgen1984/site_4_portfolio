@@ -493,3 +493,32 @@ body {
 .pricing__period {}
 
 /* #endregion Pricing */
+
+/* #region Section Contact us */
+
+.section--contact-us {}
+
+.container--common {}
+
+.contact-us__flex-group {}
+
+.contact-us__left-side {}
+
+.contact-us__right-side {}
+
+.h2--common {}
+
+.contact-us__h2 {}
+
+.p--common {}
+
+.contact-us__p {}
+
+.contact-us__form {}
+
+.contact-us__input {}
+
+.contact-us__btn-subscribe {}
+
+
+/* #endregion Section Contact us */
