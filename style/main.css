@@ -31,6 +31,9 @@ p {
   --font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-family);
@@ -204,8 +207,8 @@ body {
 .home____flex-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
+  gap: 9%;
 }
 
 .home--left-side {
@@ -393,7 +396,7 @@ body {
 
 .about-us__flex-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 185px 0;
 }
@@ -449,9 +452,9 @@ body {
 
 .pricing__flex-group {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 150px;
 }
 
@@ -506,8 +509,8 @@ body {
 .contact-us__flex-group {
   display: flex;
   padding-top: 75px;
-  justify-content: center;
-  gap: 94px;
+  justify-content: space-around;
+  gap: 30px;
   flex-wrap: wrap;
 }
 

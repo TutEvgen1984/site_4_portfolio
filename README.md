@@ -1,8 +1,2 @@
 # Верстка сайта по макету
-
-Это код одного раздела сайта выполненный на HTML и CSS по макету из Figma.  
-
-[Код](https://github.com/morphIsmail/site_4_portfolio)  
-[Результат](https://morphismail.github.io/site_4_portfolio/)
-
-[![GitHub](https://img.shields.io/badge/-Мой_GitHub-333?style=for-the-badge&logo=GitHub&logoColor=fff)](https://github.com/morphIsmail)
+Сделана вёрстка для размера 1600 пикселей и выше. Вёрстка сделана не пиксель в пиксель - сделана примерно на глаз. В макете еще необходимо выполнить макеты медиа запросов для 992 767 575 320 пикселей.
